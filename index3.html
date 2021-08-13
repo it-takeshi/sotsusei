@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{
+      cursor: pointer;
+      transition: border-radius .5s;
+    }
+
+.changed{
+  border-radius: 50%;
+}
+.show{
+  display:block;
+}
+
+#taasei{
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+
+  <img src="image/timer.png" alt="" id="trigger"  height="150px"  width="150px">
+  <p id="target"></p>
+  <p id="taasei">たっせい！！！</p>
+
+ 
+
+<!-- ボタンクリックしてdisplay:noneを表示 -->
+<p id="p1">テスト１</p>
+<input type="button" value="ボタン1" onclick="clickBtn1()" />
+<!-- ボタンクリックしてdisplay:noneを表示終了 -->
+
+  <script>
+function process(){
+  document.querySelector('#trigger').classList.add('changed');
+  document.querySelector('#target').textContent='できた！！';
+  document.querySelector('#taasei').classList.add('show');
+}
+
+    document.querySelector('#trigger').addEventListener('click',process);
+
+
+// ボタンクリックしてdisplay:noneを表示
+//初期表示は非表示
+document.getElementById("p1").style.display ="none";
+
+function clickBtn1(){
+const p1 = document.getElementById("p1");
+if(p1.style.display=="block"){
+    // noneで非表示
+p1.style.display ="none";
+}else{
+	// blockで表示
+p1.style.display ="block";
+}
+}
+// ボタンクリックしてdisplay:noneを表示終了
+  </script>
+</body>
+</html>

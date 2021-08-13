@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<title>sotsusei</title>
+<style>    
+  body{
+    font-family:Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    color:#664949;
+    background:#6CD8FF url(../img/bg.png) 0 100% repeat-x;
+    transition:background .3s;
+  }
+  img{
+      cursor: pointer;
+      border-radius: 50%;
+        }
+  .gradient1{
+  width: 150px;
+	display:block;
+	margin:0 auto;
+	border:none;
+	color:#FEC617;
+	background:#E2681C;
+	border-radius:35px;
+	font-size: 12px;
+	font-weight:bold;
+	padding:10px 10px;
+	cursor:pointer;
+	color:#FEC617;
+	background:#E27C1C;
+  text-align: center;
+  text-decoration:none;
+  margin-bottom: 5px;
+  margin-left: 10px; 
+  }
+  .gradient1:hover{
+    color:#E27C1C;
+    background:#FEC617;
+  }
+  .gradient1:focus{
+    outline:none;
+  }
+  </style>
+  </head>
+  <body>
+  <!-- ヘッダーここから -->
+  <header >
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">ホーム</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">お知らせ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">たっせい</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">やりかた</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!-- ヘッダーここまで -->
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+          <h5><a href="todo_input.php" class="gradient1" >いつ・なにする？</a></h5>
+          <p class="img"><img src="image/istockphoto-1212889961-170667a.jpg" width="170" height="170" alt=""><a href="todo_input.php"></a></p>	
+          <p>なにをする？</p>
+        </div>
+        <div class="col">
+              <h5><a href="thing_input.php" class="gradient1">もの・こと</a></h5>
+              <p class="img"><img src="image/child1.jpg"  alt=""></p>
+              <p>やりかた・もちもの</p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h5><a href="remind.php" class="gradient1">おもいだす</a></h5>
+        <p class="img"><img src="image/child2.jpg" width="170" height="170" alt=""></p>
+        <p>わすれたときに</p>
+      </div>
+      <div class="col">
+        <h5><a href="can_read.php" class="gradient1">たっせい</a></h5>
+        <p class="img"><img src="image/trophy-5994842__480.png" width="170" height="170" alt=""></p>
+        <p>ポイントためよう</p>
+    </div>
+  </div>
+</div>
+<footer class="bg-secondary text-center text-light p-5 mt-5"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+</script>
+  </body>
+</html>
